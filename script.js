@@ -23,7 +23,7 @@ let textToTalk = new SpeechSynthesisUtterance(text);
 textToTalk.onend = function(event) {
  sendButton.innerText = 'Do you want to say something else? Click here - and talk';
 };
-textToTalk.lang = 'ro-RO';
+textToTalk.lang = 'en-GB';
 textToTalk.rate = 0.5;
 textToTalk.pitch = 0.1;
 speechSynthesis.speak(textToTalk);
